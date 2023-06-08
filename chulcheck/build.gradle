@@ -18,10 +18,17 @@ dependencies {
 	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 	runtimeOnly 'com.mysql:mysql-connector-j'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
-	// https://mvnrepository.com/artifact/io.springfox/springfox-swagger-ui
-	implementation group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
-	// https://mvnrepository.com/artifact/io.springfox/springfox-swagger2
-	implementation group: 'io.springfox', name: 'springfox-swagger2', version: '3.0.0'
+
+	// Swagger 사용
+	implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.0.2'
+
+	// https://mvnrepository.com/artifact/org.json/json
+	// JSON 사용
+	implementation group: 'org.json', name: 'json', version: '20230227'
+
+	// jwt 사용
+	// https://mvnrepository.com/artifact/io.jsonwebtoken/jjwt
+	implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
 
 }
 
